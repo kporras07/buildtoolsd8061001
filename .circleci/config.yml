@@ -118,6 +118,10 @@ jobs:
           name: setup-environment-vars
           command: /build-tools-ci/scripts/set-environment
 
+      - run:
+          name: Simulate css assets compiling
+          command: echo "body { background: red !important; }" > web/themes/custom/bartik/css/test.css
+
       # Deploy to Pantheon
       - run:
           name: deploy to Pantheon
