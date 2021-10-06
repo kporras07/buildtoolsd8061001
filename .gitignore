@@ -5,6 +5,13 @@
 # To ignore all paths that composer manages when using this project template,
 # remove all double-hashed () lines.
 
+web/themes/custom/bartik/css/test.css
+
+# :::::::::::::::::::::: cut ::::::::::::::::::::::
+
+# Put ignore patterns for css build artifacts & c. below
+# Files below this line are ignored on the source repo and committed on Pantheon
+
 web/sites/default/default.services.pantheon.preproduction.yml
 web/sites/default/default.services.yml
 web/sites/default/default.settings.php
@@ -130,10 +137,3 @@ upstream/web/
 
 # Ignore .env files as they are personal
 #/.env
-
-web/themes/custom/bartik/css/test.css
-
-# :::::::::::::::::::::: cut ::::::::::::::::::::::
-
-# Put ignore patterns for css build artifacts & c. below
-# Files below this line are ignored on the source repo and committed on Pantheon
