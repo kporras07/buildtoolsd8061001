@@ -120,7 +120,7 @@ jobs:
 
       - run:
           name: Simulate css assets compiling
-          command: echo "body { background: red !important; }" > web/themes/custom/bartik/css/test.css
+          command: ./.ci/build/compile-css
 
       # Deploy to Pantheon
       - run:
